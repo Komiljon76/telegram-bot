@@ -21,7 +21,7 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
 # Bot token and admin ID from environment variables
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("8037505019:AAGY0g3ZrWtgV1A7VSb5M0JD8wm471RRTeI")
 ADMIN_ID = int(os.getenv("ADMIN_ID", "5660670674"))  # Convert to int, default to main admin if not set
 
 # Validate bot token
