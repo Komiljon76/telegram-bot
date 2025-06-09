@@ -1,0 +1,14 @@
+{
+    "channels": [
+        {
+            "id": "@kitobtalqini",
+            "name": "Kitob Talqini",
+            "invite_link": "https://t.me/kitobtalqini"
+        },
+        {
+            "id": "@samplechannel12",
+            "name": "Sample",
+            "invite_link": "https://t.me/samplechannel12"
+        }
+    ]
+}

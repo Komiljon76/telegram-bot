@@ -1,0 +1,38 @@
+{
+    "daily_stats": {
+        "2025-06-10": {
+            "users": 2,
+            "codes_used": 3,
+            "new_users": 1
+        }
+    },
+    "code_usage": {
+        "12": 3,
+        "3": 1
+    },
+    "user_activity": {
+        "5660670674": {
+            "first_seen": "2025-06-10",
+            "last_seen": "2025-06-10",
+            "total_usage": 2,
+            "daily_usage": {
+                "2025-06-10": 2
+            }
+        },
+        "7572119881": {
+            "first_seen": "2025-06-10",
+            "last_seen": "2025-06-10",
+            "total_usage": 2,
+            "daily_usage": {
+                "2025-06-10": 2
+            }
+        }
+    },
+    "monthly_stats": {
+        "2025-06": {
+            "total_users": 0,
+            "total_codes_used": 4,
+            "new_users": 1
+        }
+    }
+}
