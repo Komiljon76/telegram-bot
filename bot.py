@@ -1,3 +1,4 @@
+# Enhanced Telegram Bot with Statistics and Admin Panel - Version 1.2 (Fixed f-string syntax)
 import os
 import json
 import logging
@@ -1212,7 +1213,8 @@ async def process_export_users(callback: types.CallbackQuery):
     for i, user_id in enumerate(users, 1):
         try:
             user = await bot.get_chat(user_id)
-            users_text += f"{i}. {user.first_name} (@{user.username or 'username yo\'q'}) - {user_id}\n"
+            username = user.username or "username yo'q"
+            users_text += f"{i}. {user.first_name} (@{username}) - {user_id}\n"
         except:
             users_text += f"{i}. Noma'lum foydalanuvchi - {user_id}\n"
     
