@@ -29,7 +29,7 @@ if not BOT_TOKEN:
     raise ValueError("BOT_TOKEN environment variable is not set!")
 
 # Initialize bot and dispatcher
-bot = Bot(token=BOT_TOKEN)
+bot = Bot(token="8037505019:AAGY0g3ZrWtgV1A7VSb5M0JD8wm471RRTeI")
 storage = MemoryStorage()
 dp = Dispatcher(storage=storage)
 
