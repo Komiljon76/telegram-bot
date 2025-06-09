@@ -21,11 +21,15 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
 # Bot token and admin ID from environment variables
-BOT_TOKEN = os.getenv("8037505019:AAGY0g3ZrWtgV1A7VSb5M0JD8wm471RRTeI")
-ADMIN_ID = int(os.getenv("5660670674", "0"))  # Convert to int, default to 0 if not set
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID", "5660670674"))  # Convert to int, default to main admin if not set
+
+# Validate bot token
+if not BOT_TOKEN:
+    raise ValueError("BOT_TOKEN environment variable is not set!")
 
 # Initialize bot and dispatcher
-bot = Bot(token="8037505019:AAGY0g3ZrWtgV1A7VSb5M0JD8wm471RRTeI")
+bot = Bot(token=BOT_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(storage=storage)
 
